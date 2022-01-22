@@ -1,0 +1,85 @@
+* {
+  /* this will help us manage our margin and padding in
+  an intuitive way */
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #2e3035;
+}
+
+/* centers everything within the header */
+header {
+  text-align: center;
+}
+
+/* gives it a more modern look */
+h1 {
+  font-family: 200;
+  letter-spacing: 1px;
+}
+
+input {
+  /* so it fills up more horizontal room on the page */
+  width: 300px;
+
+  /* keep its placeholder nicely spaced from the edges */
+  padding-left: 8px;
+  padding-right: 8px;
+
+  /* adds some breathing room between the input and the button next to it */
+  margin-right: 4px;
+
+  background-color: #48494b;
+}
+
+button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  background-color: #1bb76e;
+}
+
+input,
+button {
+  height: 31px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+h1,
+input,
+button {
+  color: white;
+}
+
+.gallery-image {
+  width: 310px;
+  height: 310px;
+  margin: 5px;
+  border: 6px solid #48494b;
+  border-radius: 3px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+
+}
+
+main {
+  max-width: 960px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
